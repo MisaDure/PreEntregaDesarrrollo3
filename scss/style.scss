@@ -1,0 +1,125 @@
+/* Reset/Fuente */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+// Archivos importados
+
+@import "utilidades/variables";
+@import "utilidades/mapa";
+
+/* Estilos de body*/
+
+.contenedor{
+    background-color: $color-fonto;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+/* Sistema de grids */
+
+.grid{
+    display: grid;
+
+    grid-template-areas: 
+        "div2 div2 div2"
+        "div1 div1 div1"
+        "div3 div3 div3"
+        "div4 div4 div4"
+        "div5 div5 div5";
+}
+
+.marencero{
+    margin: 0;
+}
+
+.div1{
+    grid-area: div1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    min-width: 300px;
+}
+
+.styleDiv1{
+    width: 100%;
+}
+
+.div2{
+    background-color: $color-fonto;
+    grid-area: div2;
+    h2{
+        font-size: 3rem;
+        color: $color-letra;
+    }
+}
+
+.div3{
+    background-color: $color-fonto;
+    grid-area: div3;
+    display: flex;
+    padding-left: 1.6rem;
+    padding-bottom: 1rem;
+    p{
+        font-size: 2rem;
+        color: $color-letra;
+    }
+}
+
+.div4{
+    background-color: $color-fonto;
+    grid-area: div4;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    min-height: 14rem;
+    ul{
+        li{
+        color: $color-letra;
+        }
+        
+    }
+}
+
+.div5{
+    background-color: $color-fonto;   
+    grid-area: div5;
+    p{
+        color: $color-letra;
+    }
+}
+
+.dropdownStyle{
+    text-decoration: none;
+}
+
+.colorTexto{
+    color: white;
+}
+
+.carrito{
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    border: 3px solid $rosa;
+}
+
+body{
+    /* Imagen de fondo */
+    background-image: url(../assets/fondo/istockphoto-1207017851-612x612_auto_x2_auto_x2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    /* Header */
+    @import "contenedores/header";
+    /* Main */
+    @import "contenedores/main";
+    /* Footer */
+    @import "contenedores/footer";
+}
+
+/* MediaQuery */
+@import "contenedores/media";

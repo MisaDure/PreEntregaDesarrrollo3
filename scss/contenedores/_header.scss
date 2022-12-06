@@ -1,0 +1,32 @@
+/* Estilos de header */
+header{
+    .titleLogo{
+        display: flex;
+            h1{
+            font-size: 3rem;
+            color: white;
+            }
+        }
+    nav{
+        div{
+            ul{
+                a{
+                    li{
+                    border: 2px solid white;
+                    color: white;
+                    font-size: 1.5rem;
+                    border-radius: 10px;    
+                    }
+                }
+            }
+            form{
+                button{
+                    border: 1px solid $rosa;
+                    color: $rosa;
+                    border-radius: 5px;
+                }
+                
+            }
+        }
+    }
+}

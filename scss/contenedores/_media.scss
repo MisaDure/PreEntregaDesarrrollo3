@@ -1,0 +1,85 @@
+@media screen and (min-width:1024px){
+    /* Estilos de body*/
+    .contenedor{
+        background-color: $color-fonto;
+        margin-top: 2rem;
+        border-radius: 10px;
+        padding-right: 84rem;
+    }
+
+    .div1{
+        grid-area: div1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        min-width: 500px;
+    }
+
+    .div2{
+        background-color: $color-fonto;
+        grid-area: div2;
+        min-width: 50rem;
+    }
+
+    
+    body{    
+        header{
+            .titleLogo{
+                display: flex;
+                h1{
+                font-size: 5rem;
+                color: white;
+                }
+            }
+            nav{
+                ul{
+                    align-items: center;
+                    li{
+                        padding: 0.5rem;
+                    }
+                    li:hover{
+                        border: 1px solid $celeste;
+                        color: $celeste;
+                        transition: 0.2s;
+                    }
+                }
+                form{
+                    button:hover{
+                        background-color: $rosa;
+                        border: 1px solid $rosa;
+                        color: white;
+                        border-radius: 5px;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }  
+        main{
+            div{
+                div{
+                    div{
+                        .palpitar{
+                            transition: 1s;
+                        }
+                        .palpitar:hover{
+                            transform: scale(1.05);
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+    /* Sistema de grids */
+    .grid{
+        display: grid;
+    
+        grid-template-areas: 
+        "div1 div2 div2"
+        "div1 div3 div3"
+        "div1 div4 div4"
+        "div1 div5 div5";
+    }
+}
